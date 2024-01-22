@@ -1,0 +1,24 @@
+import random
+a={1:'stone', 2:"paper",3:"sissor"}
+print(a)
+g = random.randint(1,3)
+k=int(input("Enter you input"))
+if k==g:
+    print("Draw")
+elif k==1 and g==2:
+    print("You Loose")
+elif k==1 and g==3:
+    print("You Won")
+elif k==2 and g==1:
+    print("You Loose")
+elif k==2 and g==3:
+    print("You Won")
+elif k==3 and g==1:
+    print("You Loose")
+elif k==3 and g==2:
+    print ("You Won")
+else:
+     print("INVALID INPUT")
+print(a[g])
+print(a[k])
+
